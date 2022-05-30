@@ -8,4 +8,8 @@
     <dimen name="padding_top_bottom">10dp</dimen>
     <dimen name="margin_top_text_layout">16dp</dimen>
     <dimen name="padding_top">20dp</dimen>
+    <dimen name="constraint_web_height">0dp</dimen>
+    <dimen name="end_slide_button_margin_bottom">52dp</dimen>
+    <dimen name="end_input_layout_margin_start">16dp</dimen>
+    <dimen name="end_web_layout_width">0dp</dimen>
 </resources>
