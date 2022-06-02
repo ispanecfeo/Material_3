@@ -18,8 +18,9 @@ class WikiFragment : Fragment(R.layout.fragment_wiki) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val binding  = FragmentWikiBinding.bind(view)
-        binding.inputEditText.setOnClickListener() {
-            binding.web.webViewClient = WebViewClient()
+        binding.web.webViewClient = WebViewClient()
+
+        binding.inputLayout.setEndIconOnClickListener {
             binding.web.loadUrl(WIKI + binding.inputEditText.text)
         }
     }

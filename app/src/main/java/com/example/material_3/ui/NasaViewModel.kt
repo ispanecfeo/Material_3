@@ -1,8 +1,10 @@
 package com.example.material_3.ui
 
+import android.content.res.Resources
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
+import com.example.material_3.R
 import com.example.material_3.domain.NasaRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -12,7 +14,7 @@ import java.text.SimpleDateFormat
 
 class NasaViewModel(private val repository: NasaRepository) : ViewModel() {
 
-    val baseAddress = "https://epic.gsfc.nasa.gov/archive/natural/";
+    val baseAddress = "https://epic.gsfc.nasa.gov/archive/natural/"
 
     private val _image: MutableStateFlow<String?> = MutableStateFlow(null)
     val image: Flow<String?> = _image
